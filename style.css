@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-image: url("resources/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-player{
+    padding: 20px 20px 28px;
+    border-radius: 20px;
+    background-color: #212936;
+    width: fit-content;
+}
+
+.song-playing {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.song__image {
+    max-width: 308px;
+    min-height: auto;
+    max-height: 290px;
+    border-radius: 20px;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.song__name {
+    color: #E5E7EB;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.song__author {
+    color: #4D5562;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.player-timer {
+    margin-bottom: 36px;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.625rem;
+    color: #4D5562;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    height: 4px;
+    width: 100%;
+    background-color: #E5E7EB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    width: 50px;
+    background-color: #C93B76;
+    border-radius: 5px;
+    box-shadow: 0 0 14px 0 #C93B76;
+}
+
+.player-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    border: none;
+    background: none;
+}
+
+.action {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#play-stop {
+    background-color: #C93B76;
+    box-shadow: 0 0 10px 0 #C93B76;
+}
+
+#play-stop > svg {
+    fill: #E5E7EB;
+}
+
+.action--change:hover {
+    background-color: #121826a6;
+}
+
+.toggle-hidden {
+    display: none;
+}

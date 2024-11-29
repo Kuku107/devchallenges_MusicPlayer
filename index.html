@@ -3,7 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <section class="music-player">
+            <figure class="song-playing">
+                <img class="song__image" src="resources/cover-1.png" alt="forest lullaby">
+                <figcaption class="song-details">
+                    <p class="song__name">Lost in the City Lights</p>
+                    <p class="song__author">Cosmo Sheldrake</p>
+                </figcaption>
+            </figure>
+            <section class="player-timer">
+                <div class="time-display">
+                    <div class="current-time">02:23</div>
+                    <div class="duration">03:15</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </section>
+            <audio id="audio" src="resources/forest-lullaby-110624.mp3" preload="metadata">
+                Your browser does not support the audio element.
+            </audio>
+            <section class="player-actions">
+                <button class="action action--change">
+                    <img src="resources/Stop_and_play_fill-1.svg" alt="">
+                </button>
+                <button class="action" id="play-stop">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.941 14.244L14.119 10.236C12.686 9.50176 11 10.5696 11 12.2115V19.7885C11 21.4304 12.686 22.4982 14.119 21.764L21.941 17.756C23.353 17.0325 23.353 14.9675 21.941 14.244Z" fill="#E5E7EB"/>
+                    </svg>
+                    <svg class="toggle-hidden" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F3F3F3">
+                        <path d="M560-200v-560h160v560H560Zm-320 0v-560h160v560H240Z"/>
+                    </svg>
+                </button>
+                <button class="action action--change">
+                    <img src="resources/Stop_and_play_fill_reverse.svg" alt="">
+                </button>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
