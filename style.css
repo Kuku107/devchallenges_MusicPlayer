@@ -81,7 +81,7 @@ main {
 
 .progress {
     height: 100%;
-    width: 50px;
+    width: 0%;
     background-color: #C93B76;
     border-radius: 5px;
     box-shadow: 0 0 14px 0 #C93B76;
