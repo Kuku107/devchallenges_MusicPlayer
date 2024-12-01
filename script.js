@@ -116,6 +116,8 @@ audio.addEventListener("loadedmetadata", resetTimeDisplay);
 audio.addEventListener("timeupdate", () => {
     updateProgressBar();
     currentTimeDisplay.textContent = formatTime(audio.currentTime);
+    if (audio.currentTime === audio.duration)
+        nextSong();
 });
 
 progressBarElement.addEventListener("click", (e) => {
